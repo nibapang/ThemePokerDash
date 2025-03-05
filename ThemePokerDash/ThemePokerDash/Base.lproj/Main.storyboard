@@ -1,0 +1,1029 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="71C-oE-ujZ">
+    <device id="retina6_12" orientation="landscape" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Theme Poker Theme ListVC-->
+        <scene sceneID="XzL-eJ-sET">
+            <objects>
+                <viewController storyboardIdentifier="ThemeListVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Trg-O8-EGB" customClass="ThemePokerThemeListVC" customModule="ThemePokerDash" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vNn-iR-heC">
+                        <rect key="frame" x="0.0" y="0.0" width="852" height="393"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="h5a-Mv-Jo6">
+                                <rect key="frame" x="0.0" y="0.0" width="852" height="393"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="99F-yg-9fV">
+                                <rect key="frame" x="159" y="12" width="622" height="348"/>
+                                <subviews>
+                                    <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jTg-cB-Abm">
+                                        <rect key="frame" x="0.0" y="0.0" width="622" height="348"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Cjj-f8-GdY">
+                                            <rect key="frame" x="0.0" y="0.0" width="622" height="348"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="V 1" translatesAutoresizingMaskIntoConstraints="NO" id="RyS-bI-fiz">
+                                                    <rect key="frame" x="12" y="12" width="598" height="324"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <integer key="value" value="12"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="RyS-bI-fiz" firstAttribute="leading" secondItem="Cjj-f8-GdY" secondAttribute="leading" constant="12" id="Lf0-8Q-c5m"/>
+                                                <constraint firstItem="RyS-bI-fiz" firstAttribute="top" secondItem="Cjj-f8-GdY" secondAttribute="top" constant="12" id="Lvc-he-nSv"/>
+                                                <constraint firstAttribute="bottom" secondItem="RyS-bI-fiz" secondAttribute="bottom" constant="12" id="bmM-yQ-Uog"/>
+                                                <constraint firstAttribute="trailing" secondItem="RyS-bI-fiz" secondAttribute="trailing" constant="12" id="fAC-us-MZa"/>
+                                            </constraints>
+                                        </view>
+                                        <blurEffect style="light"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="24"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </visualEffectView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Oo-yp-5Fz">
+                                <rect key="frame" x="71" y="12.666666666666668" width="60" height="58.666666666666657"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="9nM-nP-rsv"/>
+                                    <constraint firstAttribute="height" constant="60" id="x6z-IW-MEW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="X">
+                                    <color key="titleColor" name="cell"/>
+                                    <imageReference key="backgroundImage" image="xmark.circle.fill" catalog="system" renderingMode="hierarchical-single">
+                                        <hierarchicalColors>
+                                            <color name="cell"/>
+                                            <color systemColor="secondaryLabelColor"/>
+                                            <color systemColor="tertiaryLabelColor"/>
+                                        </hierarchicalColors>
+                                    </imageReference>
+                                </state>
+                                <connections>
+                                    <action selector="btnBack:" destination="Trg-O8-EGB" eventType="touchUpInside" id="CbD-mg-rLC"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game Themes" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0HC-38-RB0">
+                                <rect key="frame" x="50.333333333333343" y="170.66666666666666" width="142" height="31"/>
+                                <fontDescription key="fontDescription" name="KohinoorTelugu-Medium" family="Kohinoor Telugu" pointSize="22"/>
+                                <color key="textColor" name="lbl1"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="UDj-do-ZBN"/>
+                        <color key="backgroundColor" name="bg"/>
+                        <constraints>
+                            <constraint firstItem="0HC-38-RB0" firstAttribute="centerY" secondItem="99F-yg-9fV" secondAttribute="centerY" id="1uD-Ek-t2c"/>
+                            <constraint firstItem="h5a-Mv-Jo6" firstAttribute="top" secondItem="vNn-iR-heC" secondAttribute="top" id="8fq-Ew-IqC"/>
+                            <constraint firstItem="UDj-do-ZBN" firstAttribute="trailing" secondItem="99F-yg-9fV" secondAttribute="trailing" constant="12" id="9z9-h6-foC"/>
+                            <constraint firstItem="99F-yg-9fV" firstAttribute="leading" secondItem="UDj-do-ZBN" secondAttribute="leading" constant="100" id="A5L-qe-GPr"/>
+                            <constraint firstAttribute="bottom" secondItem="h5a-Mv-Jo6" secondAttribute="bottom" id="Qd3-UT-uan"/>
+                            <constraint firstItem="0HC-38-RB0" firstAttribute="centerX" secondItem="8Oo-yp-5Fz" secondAttribute="centerX" multiplier="1.2" id="Qym-fc-Vfi"/>
+                            <constraint firstItem="99F-yg-9fV" firstAttribute="top" secondItem="UDj-do-ZBN" secondAttribute="top" constant="12" id="Ruz-Pi-ak8"/>
+                            <constraint firstItem="8Oo-yp-5Fz" firstAttribute="leading" secondItem="UDj-do-ZBN" secondAttribute="leading" constant="12" id="fYA-mW-c1U"/>
+                            <constraint firstItem="UDj-do-ZBN" firstAttribute="bottom" secondItem="99F-yg-9fV" secondAttribute="bottom" constant="12" id="gIw-IH-Tpl"/>
+                            <constraint firstItem="8Oo-yp-5Fz" firstAttribute="top" secondItem="UDj-do-ZBN" secondAttribute="top" constant="12" id="gvA-43-NBZ"/>
+                            <constraint firstItem="h5a-Mv-Jo6" firstAttribute="leading" secondItem="vNn-iR-heC" secondAttribute="leading" id="kT0-rt-xex"/>
+                            <constraint firstAttribute="trailing" secondItem="h5a-Mv-Jo6" secondAttribute="trailing" id="rMr-Tu-AYZ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="5Oo-4o-1M9"/>
+                    <connections>
+                        <outlet property="img" destination="RyS-bI-fiz" id="2dk-sH-iN0"/>
+                        <outlet property="lblTitle" destination="0HC-38-RB0" id="snz-NV-lVL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6P6-9y-Sho" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2330" y="866"/>
+        </scene>
+        <!--Theme Poker About AppVC-->
+        <scene sceneID="guf-Dc-qdE">
+            <objects>
+                <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="n8K-GE-dom" customClass="ThemePokerAboutAppVC" customModule="ThemePokerDash" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CVO-ys-40h">
+                        <rect key="frame" x="0.0" y="0.0" width="852" height="393"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="Ffo-Hk-Nbw">
+                                <rect key="frame" x="0.0" y="0.0" width="852" height="393"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="IdA-xI-aCJ">
+                                <rect key="frame" x="159" y="12" width="622" height="348"/>
+                                <subviews>
+                                    <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qiu-1u-JSi">
+                                        <rect key="frame" x="0.0" y="0.0" width="622" height="348"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="TCb-K9-1To">
+                                            <rect key="frame" x="0.0" y="0.0" width="622" height="348"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <subviews>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="QlJ-ka-SXH">
+                                                    <rect key="frame" x="12" y="12" width="598" height="324"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <string key="text"> Theme Poker Dash 
+
+ Theme Poker Dash is an innovative poker-based game that brings a refreshing twist to traditional card games. It blends strategic gameplay with interactive elements, making it engaging for both poker enthusiasts and casual players. The game offers a dynamic experience with various themes, challenges, and an immersive card-hunting mechanism.
+
+How to Play
+	1.	Select a Game Theme – Start by choosing a visual theme from the available options to personalize your gaming experience.
+	2.	Find the Cards – Hidden poker cards are scattered within the theme you select. Identify and collect them before time runs out.
+	3.	Earn Points – Score points by collecting all cards within the given time limit. Completing levels faster rewards you with time-based bonuses.
+	4.	Advance Through Levels – As you progress, levels become more challenging, requiring sharp observation and quick decision-making.
+	5.	Check Your History – View your past scores and achievements in the history section to track your progress.
+
+Key Features
+	•	Engaging Card-Hunting Gameplay – A fresh take on poker that adds an interactive twist.
+	•	Multiple Themes – Choose from various beautifully illustrated game themes.
+	•	Score-Based Progression – Earn points and time bonuses as you play.
+	•	Game History Tracking – Keep a record of your past performances and high scores.
+	•	User-Friendly Interface – Designed with intuitive controls for smooth gameplay.
+
+Benefits of Playing
+	•	Enhances observation skills and quick decision-making.
+	•	Offers a unique blend of poker strategy and hidden object gameplay.
+	•	Provides an enjoyable, stress-free gaming experience.
+	•	Encourages competition with score-based challenges.
+	•	Great for both solo play and casual gaming sessions.
+</string>
+                                                    <color key="textColor" name="lbl1"/>
+                                                    <fontDescription key="fontDescription" name="KohinoorTelugu-Medium" family="Kohinoor Telugu" pointSize="22"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="QlJ-ka-SXH" firstAttribute="top" secondItem="TCb-K9-1To" secondAttribute="top" constant="12" id="F2w-uT-RtM"/>
+                                                <constraint firstItem="QlJ-ka-SXH" firstAttribute="leading" secondItem="TCb-K9-1To" secondAttribute="leading" constant="12" id="RFZ-w5-tpJ"/>
+                                                <constraint firstAttribute="bottom" secondItem="QlJ-ka-SXH" secondAttribute="bottom" constant="12" id="eZE-CW-Ey4"/>
+                                                <constraint firstAttribute="trailing" secondItem="QlJ-ka-SXH" secondAttribute="trailing" constant="12" id="yp6-KH-Nxq"/>
+                                            </constraints>
+                                        </view>
+                                        <blurEffect style="light"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="24"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </visualEffectView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Fe-9K-KPH">
+                                <rect key="frame" x="71" y="12.666666666666668" width="60" height="58.666666666666657"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="AP8-IJ-XVT"/>
+                                    <constraint firstAttribute="width" constant="60" id="au8-z7-8Rl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="X">
+                                    <color key="titleColor" name="cell"/>
+                                    <imageReference key="backgroundImage" image="xmark.circle.fill" catalog="system" renderingMode="hierarchical-single">
+                                        <hierarchicalColors>
+                                            <color name="cell"/>
+                                            <color systemColor="secondaryLabelColor"/>
+                                            <color systemColor="tertiaryLabelColor"/>
+                                        </hierarchicalColors>
+                                    </imageReference>
+                                </state>
+                                <connections>
+                                    <action selector="btnBack:" destination="n8K-GE-dom" eventType="touchUpInside" id="3yT-Ii-NPp"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j57-Rf-L6Q">
+                                <rect key="frame" x="113.66666666666667" y="127.66666666666669" width="15.333333333333329" height="154"/>
+                                <string key="text">A
+B
+O
+U
+T</string>
+                                <fontDescription key="fontDescription" name="KohinoorTelugu-Medium" family="Kohinoor Telugu" pointSize="22"/>
+                                <color key="textColor" name="lbl1"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Cdt-ZY-OlJ"/>
+                        <color key="backgroundColor" name="bg"/>
+                        <constraints>
+                            <constraint firstItem="Ffo-Hk-Nbw" firstAttribute="leading" secondItem="CVO-ys-40h" secondAttribute="leading" id="17X-am-Ba2"/>
+                            <constraint firstItem="j57-Rf-L6Q" firstAttribute="centerX" secondItem="0Fe-9K-KPH" secondAttribute="centerX" multiplier="1.2" id="4cq-KM-NgH"/>
+                            <constraint firstItem="Cdt-ZY-OlJ" firstAttribute="trailing" secondItem="IdA-xI-aCJ" secondAttribute="trailing" constant="12" id="6Eo-mg-B9n"/>
+                            <constraint firstItem="Ffo-Hk-Nbw" firstAttribute="top" secondItem="CVO-ys-40h" secondAttribute="top" id="JAw-Yr-eGQ"/>
+                            <constraint firstAttribute="trailing" secondItem="Ffo-Hk-Nbw" secondAttribute="trailing" id="NXa-Iw-m7W"/>
+                            <constraint firstItem="IdA-xI-aCJ" firstAttribute="top" secondItem="Cdt-ZY-OlJ" secondAttribute="top" constant="12" id="REB-FC-ho8"/>
+                            <constraint firstItem="Cdt-ZY-OlJ" firstAttribute="bottom" secondItem="IdA-xI-aCJ" secondAttribute="bottom" constant="12" id="SHg-ni-fio"/>
+                            <constraint firstItem="0Fe-9K-KPH" firstAttribute="top" secondItem="Cdt-ZY-OlJ" secondAttribute="top" constant="12" id="SIT-m3-cTX"/>
+                            <constraint firstAttribute="bottom" secondItem="Ffo-Hk-Nbw" secondAttribute="bottom" id="b6r-US-rE6"/>
+                            <constraint firstItem="0Fe-9K-KPH" firstAttribute="leading" secondItem="Cdt-ZY-OlJ" secondAttribute="leading" constant="12" id="ivl-55-KMs"/>
+                            <constraint firstItem="IdA-xI-aCJ" firstAttribute="leading" secondItem="Cdt-ZY-OlJ" secondAttribute="leading" constant="100" id="lAP-YQ-6vW"/>
+                            <constraint firstItem="j57-Rf-L6Q" firstAttribute="centerY" secondItem="IdA-xI-aCJ" secondAttribute="centerY" multiplier="1.1" id="w8A-i8-gLg"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="gWJ-nL-un5"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="plM-nw-yWh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2330" y="1715"/>
+        </scene>
+        <!--Theme Poker App PrivacyVC-->
+        <scene sceneID="dPa-P0-7wV">
+            <objects>
+                <viewController storyboardIdentifier="ThemePokerAppPrivacyVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="wqV-lJ-gA0" customClass="ThemePokerAppPrivacyVC" customModule="ThemePokerDash" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WFW-kI-ttU">
+                        <rect key="frame" x="0.0" y="0.0" width="852" height="393"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BOX-mp-wkO">
+                                <rect key="frame" x="0.0" y="0.0" width="852" height="393"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QOJ-zL-7pX">
+                                <rect key="frame" x="719" y="12.666666666666668" width="60" height="58.666666666666657"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="ntl-mU-XZ6"/>
+                                    <constraint firstAttribute="width" constant="60" id="uD5-gq-WcM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="X">
+                                    <color key="titleColor" name="cell"/>
+                                    <imageReference key="backgroundImage" image="xmark.circle.fill" catalog="system" renderingMode="hierarchical-single">
+                                        <hierarchicalColors>
+                                            <color name="cell"/>
+                                            <color systemColor="secondaryLabelColor"/>
+                                            <color systemColor="tertiaryLabelColor"/>
+                                        </hierarchicalColors>
+                                    </imageReference>
+                                </state>
+                                <connections>
+                                    <action selector="btnBack:" destination="wqV-lJ-gA0" eventType="touchUpInside" id="Hwd-xW-f6y"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="iZY-tq-Ucd">
+                                <rect key="frame" x="416" y="186.66666666666666" width="20" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="frD-5I-9qi"/>
+                        <color key="backgroundColor" name="bg"/>
+                        <constraints>
+                            <constraint firstItem="BOX-mp-wkO" firstAttribute="leading" secondItem="WFW-kI-ttU" secondAttribute="leading" id="0T4-al-6aT"/>
+                            <constraint firstItem="QOJ-zL-7pX" firstAttribute="top" secondItem="frD-5I-9qi" secondAttribute="top" constant="12" id="Qxm-ce-dkl"/>
+                            <constraint firstAttribute="bottom" secondItem="BOX-mp-wkO" secondAttribute="bottom" id="ZOu-p3-LTt"/>
+                            <constraint firstAttribute="trailing" secondItem="BOX-mp-wkO" secondAttribute="trailing" id="iQB-4G-iXw"/>
+                            <constraint firstItem="BOX-mp-wkO" firstAttribute="top" secondItem="WFW-kI-ttU" secondAttribute="top" id="iqs-KR-an6"/>
+                            <constraint firstItem="iZY-tq-Ucd" firstAttribute="centerY" secondItem="WFW-kI-ttU" secondAttribute="centerY" id="nU9-YH-Rdl"/>
+                            <constraint firstItem="iZY-tq-Ucd" firstAttribute="centerX" secondItem="WFW-kI-ttU" secondAttribute="centerX" id="wpA-pc-OSn"/>
+                            <constraint firstItem="frD-5I-9qi" firstAttribute="trailing" secondItem="QOJ-zL-7pX" secondAttribute="trailing" constant="14" id="zIV-dF-ks3"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="pTF-Y6-fDZ"/>
+                    <connections>
+                        <outlet property="BackBtn" destination="QOJ-zL-7pX" id="qhf-wh-5v7"/>
+                        <outlet property="indView" destination="iZY-tq-Ucd" id="Xc6-0l-ZSW"/>
+                        <outlet property="webView" destination="BOX-mp-wkO" id="Muo-FQ-hMv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LnH-kb-VsS" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="882" y="808"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="sid-Tp-3CP">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="71C-oE-ujZ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="XbR-MT-fUj">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="6Rb-j1-u6q" kind="relationship" relationship="rootViewController" id="etw-tJ-TCG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hd7-95-Xmb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="202" y="-28"/>
+        </scene>
+        <!--Theme Poker Get StartedVC-->
+        <scene sceneID="Jwx-KQ-frp">
+            <objects>
+                <viewController id="6Rb-j1-u6q" customClass="ThemePokerGetStartedVC" customModule="ThemePokerDash" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4vU-2B-fM9">
+                        <rect key="frame" x="0.0" y="0.0" width="852" height="393"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="r3G-q7-5jK">
+                                <rect key="frame" x="0.0" y="0.0" width="852" height="393"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="YrJ-Dh-cJ0">
+                                <rect key="frame" x="71" y="12" width="622" height="348"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0N4-7j-qNk">
+                                        <rect key="frame" x="0.0" y="0.0" width="305" height="348"/>
+                                        <color key="tintColor" name="lbl1"/>
+                                        <imageReference key="image" image="logo" renderingMode="hierarchical-single">
+                                            <hierarchicalColors>
+                                                <color systemColor="systemGreenColor"/>
+                                                <color systemColor="secondaryLabelColor"/>
+                                                <color systemColor="tertiaryLabelColor"/>
+                                            </hierarchicalColors>
+                                        </imageReference>
+                                    </imageView>
+                                    <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="11K-gx-BkC">
+                                        <rect key="frame" x="317" y="0.0" width="305" height="348"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="I7I-Ge-HW7">
+                                            <rect key="frame" x="0.0" y="0.0" width="305" height="348"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <subviews>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="APP INFO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="t3m-1b-vqc">
+                                                    <rect key="frame" x="12" y="12" width="281" height="324"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="textColor" name="lbl1"/>
+                                                    <fontDescription key="fontDescription" name="KohinoorTelugu-Medium" family="Kohinoor Telugu" pointSize="18"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="t3m-1b-vqc" secondAttribute="trailing" constant="12" id="1bI-Se-JYA"/>
+                                                <constraint firstItem="t3m-1b-vqc" firstAttribute="top" secondItem="I7I-Ge-HW7" secondAttribute="top" constant="12" id="X8p-65-KKp"/>
+                                                <constraint firstItem="t3m-1b-vqc" firstAttribute="leading" secondItem="I7I-Ge-HW7" secondAttribute="leading" constant="12" id="xIk-38-Hom"/>
+                                                <constraint firstAttribute="bottom" secondItem="t3m-1b-vqc" secondAttribute="bottom" constant="12" id="yZg-ri-8v0"/>
+                                            </constraints>
+                                        </view>
+                                        <blurEffect style="light"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="12"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </visualEffectView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mwP-H0-XfX">
+                                <rect key="frame" x="705" y="225.66666666666669" width="135" height="133.66666666666669"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="mwP-H0-XfX" secondAttribute="height" id="atU-8g-PbZ"/>
+                                </constraints>
+                                <color key="tintColor" name="lbl1"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="arrowshape.right.fill" catalog="system">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <imageReference key="backgroundImage" image="circle.dotted.circle.fill" catalog="system" renderingMode="hierarchical-single">
+                                        <hierarchicalColors>
+                                            <color name="cell"/>
+                                            <color systemColor="secondaryLabelColor"/>
+                                            <color systemColor="tertiaryLabelColor"/>
+                                        </hierarchicalColors>
+                                    </imageReference>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="40"/>
+                                </state>
+                                <connections>
+                                    <segue destination="aIl-Ru-o7N" kind="push" id="wia-yf-9TQ"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="wMz-Lf-Knc">
+                                <rect key="frame" x="416" y="186.66666666666666" width="20" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="YcI-PQ-CMT"/>
+                        <color key="backgroundColor" name="bg"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="r3G-q7-5jK" secondAttribute="trailing" id="55C-VU-EDi"/>
+                            <constraint firstItem="r3G-q7-5jK" firstAttribute="top" secondItem="4vU-2B-fM9" secondAttribute="top" id="84P-iM-1sO"/>
+                            <constraint firstItem="YcI-PQ-CMT" firstAttribute="bottom" secondItem="YrJ-Dh-cJ0" secondAttribute="bottom" constant="12" id="I97-Z7-ywe"/>
+                            <constraint firstItem="r3G-q7-5jK" firstAttribute="leading" secondItem="4vU-2B-fM9" secondAttribute="leading" id="LBs-o3-b29"/>
+                            <constraint firstItem="YcI-PQ-CMT" firstAttribute="bottom" secondItem="mwP-H0-XfX" secondAttribute="bottom" constant="12" id="UzN-oG-ECY"/>
+                            <constraint firstItem="wMz-Lf-Knc" firstAttribute="centerX" secondItem="4vU-2B-fM9" secondAttribute="centerX" id="V0v-b5-Oem"/>
+                            <constraint firstAttribute="bottom" secondItem="r3G-q7-5jK" secondAttribute="bottom" id="XS8-70-1uN"/>
+                            <constraint firstItem="mwP-H0-XfX" firstAttribute="leading" secondItem="YrJ-Dh-cJ0" secondAttribute="trailing" constant="12" id="ac4-4e-yUL"/>
+                            <constraint firstItem="YrJ-Dh-cJ0" firstAttribute="leading" secondItem="YcI-PQ-CMT" secondAttribute="leading" constant="12" id="jlG-Dn-Y3h"/>
+                            <constraint firstItem="YrJ-Dh-cJ0" firstAttribute="top" secondItem="YcI-PQ-CMT" secondAttribute="top" constant="12" id="loF-Ow-Udy"/>
+                            <constraint firstAttribute="trailing" secondItem="mwP-H0-XfX" secondAttribute="trailing" constant="12" id="o73-cG-guw"/>
+                            <constraint firstItem="YcI-PQ-CMT" firstAttribute="trailing" secondItem="YrJ-Dh-cJ0" secondAttribute="trailing" constant="100" id="odq-6E-Imd"/>
+                            <constraint firstItem="wMz-Lf-Knc" firstAttribute="centerY" secondItem="4vU-2B-fM9" secondAttribute="centerY" id="uUx-ay-CiJ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="zVw-4p-fM0"/>
+                    <connections>
+                        <outlet property="activityView" destination="wMz-Lf-Knc" id="cSf-p9-P4l"/>
+                        <outlet property="field" destination="t3m-1b-vqc" id="i1q-zU-XAR"/>
+                        <outlet property="imgBg" destination="r3G-q7-5jK" id="mil-ts-wnf"/>
+                        <outlet property="imgLogo" destination="0N4-7j-qNk" id="Mmg-3i-yRb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OZu-s8-04u" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="881.69014084507046" y="-28.244274809160306"/>
+        </scene>
+        <!--Theme Poker Dash GameVC-->
+        <scene sceneID="re7-gW-1iB">
+            <objects>
+                <viewController storyboardIdentifier="PokerGameVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="RtH-Re-40n" customClass="ThemePokerDashGameVC" customModule="ThemePokerDash" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="R7R-GK-out">
+                        <rect key="frame" x="0.0" y="0.0" width="852" height="393"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="G3C-b2-x7l">
+                                <rect key="frame" x="0.0" y="0.0" width="852" height="393"/>
+                            </imageView>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xaf-qd-MpD">
+                                <rect key="frame" x="129" y="12" width="652" height="348"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="V 2" translatesAutoresizingMaskIntoConstraints="NO" id="NiM-Wo-gfT">
+                                        <rect key="frame" x="0.0" y="0.0" width="652" height="348"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="NiM-Wo-gfT" secondAttribute="bottom" id="Gk8-5Q-BNl"/>
+                                    <constraint firstAttribute="trailing" secondItem="NiM-Wo-gfT" secondAttribute="trailing" id="YMk-kO-176"/>
+                                    <constraint firstItem="NiM-Wo-gfT" firstAttribute="leading" secondItem="xaf-qd-MpD" secondAttribute="leading" id="rug-DV-lKz"/>
+                                    <constraint firstItem="NiM-Wo-gfT" firstAttribute="top" secondItem="xaf-qd-MpD" secondAttribute="top" id="wMR-2n-fCi"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Ws-hg-qOD">
+                                <rect key="frame" x="71" y="12.666666666666668" width="50" height="48.666666666666657"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="kru-9X-Snh"/>
+                                    <constraint firstAttribute="width" constant="50" id="zFO-Pf-R8C"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal">
+                                    <string key="title" base64-UTF8="YES">
+WAM
+</string>
+                                    <color key="titleColor" name="cell"/>
+                                    <imageReference key="backgroundImage" image="xmark.circle.fill" catalog="system" renderingMode="hierarchical-single">
+                                        <hierarchicalColors>
+                                            <color name="cell"/>
+                                            <color systemColor="secondaryLabelColor"/>
+                                            <color systemColor="tertiaryLabelColor"/>
+                                        </hierarchicalColors>
+                                    </imageReference>
+                                </state>
+                                <connections>
+                                    <action selector="btnBack:" destination="RtH-Re-40n" eventType="touchUpInside" id="hEO-T4-smM"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="vNU-ee-Q87">
+                                <rect key="frame" x="6" y="319" width="117" height="62"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="XXX" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="adM-Oh-Rnb">
+                                        <rect key="frame" x="0.0" y="0.0" width="117" height="28"/>
+                                        <fontDescription key="fontDescription" name="KohinoorTelugu-Medium" family="Kohinoor Telugu" pointSize="20"/>
+                                        <color key="textColor" name="lbl1"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="XXX" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tYM-WP-EYI">
+                                        <rect key="frame" x="0.0" y="34" width="117" height="28"/>
+                                        <fontDescription key="fontDescription" name="KohinoorTelugu-Medium" family="Kohinoor Telugu" pointSize="20"/>
+                                        <color key="textColor" name="lbl1"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="XXX" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XTR-OQ-3GL">
+                                <rect key="frame" x="759" y="285.66666666666669" width="36" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="QuY-Jt-HHP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="KohinoorTelugu-Medium" family="Kohinoor Telugu" pointSize="20"/>
+                                <color key="textColor" name="lbl1"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="gKW-Wz-mz6"/>
+                        <color key="backgroundColor" name="bg"/>
+                        <constraints>
+                            <constraint firstItem="vNU-ee-Q87" firstAttribute="leading" secondItem="R7R-GK-out" secondAttribute="leading" constant="6" id="1cb-fV-YKt"/>
+                            <constraint firstItem="5Ws-hg-qOD" firstAttribute="top" secondItem="gKW-Wz-mz6" secondAttribute="top" constant="12" id="1v9-XA-CwP"/>
+                            <constraint firstItem="gKW-Wz-mz6" firstAttribute="trailing" secondItem="xaf-qd-MpD" secondAttribute="trailing" constant="12" id="8zL-Db-BFL"/>
+                            <constraint firstItem="XTR-OQ-3GL" firstAttribute="centerY" secondItem="xaf-qd-MpD" secondAttribute="centerY" multiplier="1.6" id="9N2-ft-zI9"/>
+                            <constraint firstItem="G3C-b2-x7l" firstAttribute="leading" secondItem="R7R-GK-out" secondAttribute="leading" id="Afh-4j-rCi"/>
+                            <constraint firstAttribute="bottom" secondItem="G3C-b2-x7l" secondAttribute="bottom" id="JT0-H4-L50"/>
+                            <constraint firstItem="xaf-qd-MpD" firstAttribute="top" secondItem="gKW-Wz-mz6" secondAttribute="top" constant="12" id="b5U-0g-lVR"/>
+                            <constraint firstItem="xaf-qd-MpD" firstAttribute="leading" secondItem="gKW-Wz-mz6" secondAttribute="leading" constant="70" id="cIs-bG-qI0"/>
+                            <constraint firstItem="5Ws-hg-qOD" firstAttribute="leading" secondItem="gKW-Wz-mz6" secondAttribute="leading" constant="12" id="iD3-a9-tBR"/>
+                            <constraint firstAttribute="trailing" secondItem="G3C-b2-x7l" secondAttribute="trailing" id="mLH-Hb-uNZ"/>
+                            <constraint firstItem="gKW-Wz-mz6" firstAttribute="bottom" secondItem="xaf-qd-MpD" secondAttribute="bottom" constant="12" id="p3A-dy-tpJ"/>
+                            <constraint firstItem="G3C-b2-x7l" firstAttribute="top" secondItem="R7R-GK-out" secondAttribute="top" id="tIr-ds-V2K"/>
+                            <constraint firstAttribute="bottom" secondItem="vNU-ee-Q87" secondAttribute="bottom" constant="12" id="tSw-eh-tRE"/>
+                            <constraint firstItem="XTR-OQ-3GL" firstAttribute="leading" secondItem="xaf-qd-MpD" secondAttribute="trailing" constant="-22" id="ukF-xl-42M"/>
+                            <constraint firstItem="xaf-qd-MpD" firstAttribute="leading" secondItem="vNU-ee-Q87" secondAttribute="trailing" constant="6" id="vKC-lS-gRf"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="OD6-Ib-ANH"/>
+                    <connections>
+                        <outlet property="imgBg" destination="NiM-Wo-gfT" id="r2d-Jb-dEV"/>
+                        <outlet property="lblCards" destination="tYM-WP-EYI" id="rur-R3-fFx"/>
+                        <outlet property="lblScore" destination="adM-Oh-Rnb" id="Yib-8G-fZ3"/>
+                        <outlet property="lblTime" destination="XTR-OQ-3GL" id="XFN-KZ-rYu"/>
+                        <outlet property="viewGame" destination="xaf-qd-MpD" id="92O-uv-UFg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6zb-qZ-yGy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3046.4788732394368" y="-28.244274809160306"/>
+        </scene>
+        <!--Theme Poker Start GameVC-->
+        <scene sceneID="Nid-bs-dd4">
+            <objects>
+                <viewController storyboardIdentifier="StartGameVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Ssf-gL-Nyu" customClass="ThemePokerStartGameVC" customModule="ThemePokerDash" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TJt-9w-8bB">
+                        <rect key="frame" x="0.0" y="0.0" width="852" height="393"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="hTJ-RC-DuW">
+                                <rect key="frame" x="0.0" y="0.0" width="852" height="393"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="loM-yy-xPS">
+                                <rect key="frame" x="71" y="12" width="622" height="348"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VkS-sv-pDC">
+                                        <rect key="frame" x="0.0" y="0.0" width="203.33333333333334" height="348"/>
+                                        <color key="tintColor" name="lbl1"/>
+                                        <imageReference key="image" image="logo" renderingMode="hierarchical-single">
+                                            <hierarchicalColors>
+                                                <color systemColor="systemGreenColor"/>
+                                                <color systemColor="secondaryLabelColor"/>
+                                                <color systemColor="tertiaryLabelColor"/>
+                                            </hierarchicalColors>
+                                        </imageReference>
+                                    </imageView>
+                                    <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PzG-8m-VDp">
+                                        <rect key="frame" x="215.33333333333329" y="0.0" width="406.66666666666674" height="348"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="4Tn-N7-LeO">
+                                            <rect key="frame" x="0.0" y="0.0" width="407" height="348"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <subviews>
+                                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="R0P-k8-NUD">
+                                                    <rect key="frame" x="6" y="32" width="395" height="310"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="ek5-PA-2Bd">
+                                                        <size key="itemSize" width="128" height="128"/>
+                                                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                    </collectionViewFlowLayout>
+                                                    <cells>
+                                                        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="GameThemeCell" reuseIdentifier="GameThemeCell" id="RpY-kk-cP6" customClass="GameThemeCell" customModule="ThemePokerDash" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="eOT-1H-onE">
+                                                                <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <subviews>
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon" translatesAutoresizingMaskIntoConstraints="NO" id="QC1-yB-QbX">
+                                                                        <rect key="frame" x="3" y="3" width="122" height="122"/>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                                <real key="value" value="12"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                    </imageView>
+                                                                </subviews>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="bottom" secondItem="QC1-yB-QbX" secondAttribute="bottom" constant="3" id="1xD-XL-3pI"/>
+                                                                    <constraint firstItem="QC1-yB-QbX" firstAttribute="leading" secondItem="eOT-1H-onE" secondAttribute="leading" constant="3" id="IVn-3d-CJM"/>
+                                                                    <constraint firstItem="QC1-yB-QbX" firstAttribute="top" secondItem="eOT-1H-onE" secondAttribute="top" constant="3" id="O1S-7B-NR2"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="QC1-yB-QbX" secondAttribute="trailing" constant="3" id="PjS-W6-RK0"/>
+                                                                </constraints>
+                                                            </collectionViewCellContentView>
+                                                            <connections>
+                                                                <outlet property="img" destination="QC1-yB-QbX" id="kQr-fa-x85"/>
+                                                            </connections>
+                                                        </collectionViewCell>
+                                                    </cells>
+                                                </collectionView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SELECT THEME AND START" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="92k-Ep-ZsX">
+                                                    <rect key="frame" x="0.0" y="0.0" width="407" height="32"/>
+                                                    <fontDescription key="fontDescription" name="KohinoorTelugu-Medium" family="Kohinoor Telugu" pointSize="14"/>
+                                                    <color key="textColor" name="lbl1"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="R0P-k8-NUD" secondAttribute="trailing" constant="6" id="APZ-Bb-z4M"/>
+                                                <constraint firstItem="R0P-k8-NUD" firstAttribute="leading" secondItem="4Tn-N7-LeO" secondAttribute="leading" constant="6" id="bC1-Uz-qQo"/>
+                                                <constraint firstItem="92k-Ep-ZsX" firstAttribute="top" secondItem="4Tn-N7-LeO" secondAttribute="top" id="dyj-tO-TrW"/>
+                                                <constraint firstAttribute="bottom" secondItem="R0P-k8-NUD" secondAttribute="bottom" constant="6" id="e7z-Mj-3Da"/>
+                                                <constraint firstItem="R0P-k8-NUD" firstAttribute="top" secondItem="92k-Ep-ZsX" secondAttribute="bottom" id="gho-3P-50o"/>
+                                                <constraint firstItem="92k-Ep-ZsX" firstAttribute="leading" secondItem="4Tn-N7-LeO" secondAttribute="leading" id="rs6-Py-XRy"/>
+                                                <constraint firstAttribute="trailing" secondItem="92k-Ep-ZsX" secondAttribute="trailing" id="xTJ-I6-OW9"/>
+                                                <constraint firstItem="R0P-k8-NUD" firstAttribute="top" secondItem="4Tn-N7-LeO" secondAttribute="top" constant="32" id="zTh-Ij-ABu"/>
+                                            </constraints>
+                                        </view>
+                                        <blurEffect style="light"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="12"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </visualEffectView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="VkS-sv-pDC" firstAttribute="width" secondItem="PzG-8m-VDp" secondAttribute="width" multiplier="1:2" id="c2f-tW-tDA"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zCz-CQ-fSP">
+                                <rect key="frame" x="705" y="279" width="135" height="81"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="zCz-CQ-fSP" secondAttribute="height" multiplier="5:3" id="dKc-bp-UXc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="16"/>
+                                <color key="tintColor" name="lbl1"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="START" image="arrowshape.right.fill" catalog="system">
+                                    <color key="titleColor" name="lbl1"/>
+                                    <imageReference key="backgroundImage" image="Artboard 62" renderingMode="hierarchical-single">
+                                        <hierarchicalColors>
+                                            <color name="btn"/>
+                                            <color systemColor="secondaryLabelColor"/>
+                                            <color systemColor="tertiaryLabelColor"/>
+                                        </hierarchicalColors>
+                                    </imageReference>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="40"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnStart:" destination="Ssf-gL-Nyu" eventType="touchUpInside" id="cwT-ZL-qip"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xc9-n9-8wE">
+                                <rect key="frame" x="71" y="12.666666666666668" width="60" height="58.666666666666657"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="IV5-vT-GZs"/>
+                                    <constraint firstAttribute="width" constant="60" id="aMd-qX-NKK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="X">
+                                    <color key="titleColor" name="cell"/>
+                                    <imageReference key="backgroundImage" image="xmark.circle.fill" catalog="system" renderingMode="hierarchical-single">
+                                        <hierarchicalColors>
+                                            <color name="cell"/>
+                                            <color systemColor="secondaryLabelColor"/>
+                                            <color systemColor="tertiaryLabelColor"/>
+                                        </hierarchicalColors>
+                                    </imageReference>
+                                </state>
+                                <connections>
+                                    <action selector="btnBack:" destination="Ssf-gL-Nyu" eventType="touchUpInside" id="dNy-a6-qpq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="t9w-GM-cp1"/>
+                        <color key="backgroundColor" name="bg"/>
+                        <constraints>
+                            <constraint firstItem="xc9-n9-8wE" firstAttribute="leading" secondItem="VkS-sv-pDC" secondAttribute="leading" id="4Sr-Zi-1uU"/>
+                            <constraint firstAttribute="bottom" secondItem="hTJ-RC-DuW" secondAttribute="bottom" id="BeC-ov-YdS"/>
+                            <constraint firstItem="xc9-n9-8wE" firstAttribute="top" secondItem="VkS-sv-pDC" secondAttribute="top" id="DoD-c5-GBf"/>
+                            <constraint firstItem="hTJ-RC-DuW" firstAttribute="top" secondItem="TJt-9w-8bB" secondAttribute="top" id="Fas-sk-kDV"/>
+                            <constraint firstItem="t9w-GM-cp1" firstAttribute="trailing" secondItem="loM-yy-xPS" secondAttribute="trailing" constant="100" id="FcD-EE-1Xm"/>
+                            <constraint firstAttribute="trailing" secondItem="hTJ-RC-DuW" secondAttribute="trailing" id="Ffr-Um-f08"/>
+                            <constraint firstItem="loM-yy-xPS" firstAttribute="leading" secondItem="t9w-GM-cp1" secondAttribute="leading" constant="12" id="Txw-PY-DBv"/>
+                            <constraint firstItem="zCz-CQ-fSP" firstAttribute="leading" secondItem="loM-yy-xPS" secondAttribute="trailing" constant="12" id="WLu-oV-Vi0"/>
+                            <constraint firstItem="hTJ-RC-DuW" firstAttribute="leading" secondItem="TJt-9w-8bB" secondAttribute="leading" id="gbu-8o-4Ig"/>
+                            <constraint firstItem="t9w-GM-cp1" firstAttribute="bottom" secondItem="zCz-CQ-fSP" secondAttribute="bottom" constant="12" id="k2V-aB-zfK"/>
+                            <constraint firstItem="loM-yy-xPS" firstAttribute="top" secondItem="t9w-GM-cp1" secondAttribute="top" constant="12" id="ld5-Mr-Lnf"/>
+                            <constraint firstAttribute="trailing" secondItem="zCz-CQ-fSP" secondAttribute="trailing" constant="12" id="wJm-kV-zlb"/>
+                            <constraint firstItem="t9w-GM-cp1" firstAttribute="bottom" secondItem="loM-yy-xPS" secondAttribute="bottom" constant="12" id="zN5-qX-Kc5"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="FPj-zm-azv"/>
+                    <connections>
+                        <outlet property="cv" destination="R0P-k8-NUD" id="mYM-cf-LE0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kDz-vu-x2q" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2330" y="-28"/>
+        </scene>
+        <!--Theme Poker Game HomeVC-->
+        <scene sceneID="uCR-PD-x2X">
+            <objects>
+                <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="aIl-Ru-o7N" customClass="ThemePokerGameHomeVC" customModule="ThemePokerDash" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zQY-PN-i3a">
+                        <rect key="frame" x="0.0" y="0.0" width="852" height="393"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="nYy-zR-WCZ">
+                                <rect key="frame" x="0.0" y="0.0" width="852" height="393"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="YeP-4B-Fvy">
+                                <rect key="frame" x="71" y="12" width="710" height="348"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xbe-SS-Vcf">
+                                        <rect key="frame" x="0.0" y="0.0" width="710" height="40"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bBb-Ia-fne">
+                                                <rect key="frame" x="0.0" y="0.0" width="100" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="100" id="4aU-SS-4Jm"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="KohinoorTelugu-Medium" family="Kohinoor Telugu" pointSize="16"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WELCOME HOME" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gec-BU-QaT">
+                                                <rect key="frame" x="100" y="0.0" width="570" height="40"/>
+                                                <fontDescription key="fontDescription" name="KohinoorTelugu-Medium" family="Kohinoor Telugu" pointSize="26"/>
+                                                <color key="textColor" name="lbl1"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="57r-YB-RvM">
+                                                <rect key="frame" x="670" y="0.0" width="40" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="57r-YB-RvM" secondAttribute="height" id="Ucm-uI-i7I"/>
+                                                </constraints>
+                                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" image="person.badge.key" catalog="system" backgroundImage="Artboard 64">
+                                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="wqV-lJ-gA0" kind="push" id="Yh0-bW-SZy"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="TC6-t2-7bd"/>
+                                        </constraints>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="krm-AT-bB3">
+                                        <rect key="frame" x="0.0" y="52" width="710" height="296"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="qVn-rv-Fv4">
+                                                <rect key="frame" x="12" y="12" width="686" height="272"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="OiM-Il-hQY">
+                                                        <rect key="frame" x="0.0" y="0.0" width="337" height="272"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NHU-PD-JgK">
+                                                                <rect key="frame" x="0.0" y="0.0" width="337" height="130"/>
+                                                                <fontDescription key="fontDescription" name="KohinoorTelugu-Medium" family="Kohinoor Telugu" pointSize="24"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title="POKER GAME     ." backgroundImage="Artboard 60">
+                                                                    <color key="titleColor" name="lbl1"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <segue destination="Ssf-gL-Nyu" kind="push" id="MKO-Rl-J5B"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mNb-7L-jQc">
+                                                                <rect key="frame" x="0.0" y="142" width="337" height="130"/>
+                                                                <fontDescription key="fontDescription" name="KohinoorTelugu-Medium" family="Kohinoor Telugu" pointSize="22"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title="GAME HISTORY     ." backgroundImage="Artboard 60">
+                                                                    <color key="titleColor" name="lbl1"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <segue destination="IFn-rh-662" kind="push" id="B92-Uw-Fgb"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="7fJ-Xg-7MI">
+                                                        <rect key="frame" x="349" y="0.0" width="337" height="272"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="btu-dd-6Qm">
+                                                                <rect key="frame" x="0.0" y="0.0" width="337" height="82.666666666666671"/>
+                                                                <fontDescription key="fontDescription" name="KohinoorTelugu-Medium" family="Kohinoor Telugu" pointSize="22"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title="VIEW GAME THEMES" backgroundImage="Artboard 61">
+                                                                    <color key="titleColor" name="lbl1"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <segue destination="Trg-O8-EGB" kind="push" id="t3g-AM-qaz"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2KC-iJ-Lh0">
+                                                                <rect key="frame" x="0.0" y="94.666666666666657" width="337" height="82.666666666666657"/>
+                                                                <fontDescription key="fontDescription" name="KohinoorTelugu-Medium" family="Kohinoor Telugu" pointSize="22"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title="RATE OUR CARD APP" backgroundImage="Artboard 61">
+                                                                    <color key="titleColor" name="lbl1"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="btnRate:" destination="aIl-Ru-o7N" eventType="touchUpInside" id="F6Q-uu-81a"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xxi-9h-tla">
+                                                                <rect key="frame" x="0.0" y="189.33333333333331" width="337" height="82.666666666666686"/>
+                                                                <fontDescription key="fontDescription" name="KohinoorTelugu-Medium" family="Kohinoor Telugu" pointSize="22"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title="ABOUT POKER GAME" backgroundImage="Artboard 61">
+                                                                    <color key="titleColor" name="lbl1"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <segue destination="n8K-GE-dom" kind="push" id="1bO-eB-EIW"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" name="cell"/>
+                                        <constraints>
+                                            <constraint firstItem="qVn-rv-Fv4" firstAttribute="leading" secondItem="krm-AT-bB3" secondAttribute="leading" constant="12" id="3yu-oQ-sXQ"/>
+                                            <constraint firstItem="qVn-rv-Fv4" firstAttribute="top" secondItem="krm-AT-bB3" secondAttribute="top" constant="12" id="4gF-4p-RJL"/>
+                                            <constraint firstAttribute="trailing" secondItem="qVn-rv-Fv4" secondAttribute="trailing" constant="12" id="NrJ-PV-3jd"/>
+                                            <constraint firstAttribute="bottom" secondItem="qVn-rv-Fv4" secondAttribute="bottom" constant="12" id="uzj-FI-0XT"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="44"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="bPh-46-fc4"/>
+                        <color key="backgroundColor" name="bg"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="nYy-zR-WCZ" secondAttribute="trailing" id="49q-qt-pqe"/>
+                            <constraint firstItem="bPh-46-fc4" firstAttribute="bottom" secondItem="YeP-4B-Fvy" secondAttribute="bottom" constant="12" id="A6j-Cz-Za2"/>
+                            <constraint firstItem="bPh-46-fc4" firstAttribute="trailing" secondItem="YeP-4B-Fvy" secondAttribute="trailing" constant="12" id="B1L-y5-7Wv"/>
+                            <constraint firstItem="YeP-4B-Fvy" firstAttribute="top" secondItem="bPh-46-fc4" secondAttribute="top" constant="12" id="Bix-sK-F4H"/>
+                            <constraint firstItem="nYy-zR-WCZ" firstAttribute="top" secondItem="zQY-PN-i3a" secondAttribute="top" id="SS4-hM-nDO"/>
+                            <constraint firstItem="nYy-zR-WCZ" firstAttribute="leading" secondItem="zQY-PN-i3a" secondAttribute="leading" id="V4v-QK-0My"/>
+                            <constraint firstAttribute="bottom" secondItem="nYy-zR-WCZ" secondAttribute="bottom" id="WE7-yP-VTo"/>
+                            <constraint firstItem="YeP-4B-Fvy" firstAttribute="leading" secondItem="bPh-46-fc4" secondAttribute="leading" constant="12" id="aVC-g2-rXJ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="rjL-97-riS"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eVb-Fv-Hv0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1613.3802816901409" y="-28.244274809160306"/>
+        </scene>
+        <!--Theme Poker HistoryVC-->
+        <scene sceneID="el4-kE-1Of">
+            <objects>
+                <viewController storyboardIdentifier="HistoryVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="IFn-rh-662" customClass="ThemePokerHistoryVC" customModule="ThemePokerDash" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sQl-vK-tdl">
+                        <rect key="frame" x="0.0" y="0.0" width="852" height="393"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="Xfx-K6-mgQ">
+                                <rect key="frame" x="0.0" y="0.0" width="852" height="393"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="h8o-7K-iDM">
+                                <rect key="frame" x="159" y="12" width="622" height="348"/>
+                                <subviews>
+                                    <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NTS-va-q1u">
+                                        <rect key="frame" x="0.0" y="0.0" width="622" height="348"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="T32-Kf-a1z">
+                                            <rect key="frame" x="0.0" y="0.0" width="622" height="348"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <subviews>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="HISTORY" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="zbH-TO-1ku">
+                                                    <rect key="frame" x="12" y="12" width="598" height="324"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="textColor" name="lbl1"/>
+                                                    <fontDescription key="fontDescription" name="KohinoorTelugu-Medium" family="Kohinoor Telugu" pointSize="22"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="zbH-TO-1ku" firstAttribute="leading" secondItem="T32-Kf-a1z" secondAttribute="leading" constant="12" id="SnT-2L-YHA"/>
+                                                <constraint firstItem="zbH-TO-1ku" firstAttribute="top" secondItem="T32-Kf-a1z" secondAttribute="top" constant="12" id="XbP-nm-usm"/>
+                                                <constraint firstAttribute="trailing" secondItem="zbH-TO-1ku" secondAttribute="trailing" constant="12" id="cgY-N2-eby"/>
+                                                <constraint firstAttribute="bottom" secondItem="zbH-TO-1ku" secondAttribute="bottom" constant="12" id="oGG-WP-qGw"/>
+                                            </constraints>
+                                        </view>
+                                        <blurEffect style="light"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="24"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </visualEffectView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sjX-BE-kdU">
+                                <rect key="frame" x="71" y="12.666666666666668" width="60" height="58.666666666666657"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="INj-dF-A3i"/>
+                                    <constraint firstAttribute="height" constant="60" id="jOx-1t-5Iw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="X">
+                                    <color key="titleColor" name="cell"/>
+                                    <imageReference key="backgroundImage" image="xmark.circle.fill" catalog="system" renderingMode="hierarchical-single">
+                                        <hierarchicalColors>
+                                            <color name="cell"/>
+                                            <color systemColor="secondaryLabelColor"/>
+                                            <color systemColor="tertiaryLabelColor"/>
+                                        </hierarchicalColors>
+                                    </imageReference>
+                                </state>
+                                <connections>
+                                    <action selector="btnBack:" destination="IFn-rh-662" eventType="touchUpInside" id="fii-fM-LB7"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OKd-uG-WOx">
+                                <rect key="frame" x="113.33333333333333" y="96.666666666666671" width="15.666666666666671" height="215.66666666666663"/>
+                                <string key="text">H
+I
+S
+T
+O
+R
+Y</string>
+                                <fontDescription key="fontDescription" name="KohinoorTelugu-Medium" family="Kohinoor Telugu" pointSize="22"/>
+                                <color key="textColor" name="lbl1"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="8ld-sW-7ep"/>
+                        <color key="backgroundColor" name="bg"/>
+                        <constraints>
+                            <constraint firstItem="8ld-sW-7ep" firstAttribute="trailing" secondItem="h8o-7K-iDM" secondAttribute="trailing" constant="12" id="4o5-fA-5xz"/>
+                            <constraint firstItem="sjX-BE-kdU" firstAttribute="top" secondItem="8ld-sW-7ep" secondAttribute="top" constant="12" id="6RT-dp-N1V"/>
+                            <constraint firstItem="OKd-uG-WOx" firstAttribute="centerY" secondItem="h8o-7K-iDM" secondAttribute="centerY" multiplier="1.1" id="7fw-dZ-fqw"/>
+                            <constraint firstItem="8ld-sW-7ep" firstAttribute="bottom" secondItem="h8o-7K-iDM" secondAttribute="bottom" constant="12" id="8nd-Qi-mhd"/>
+                            <constraint firstAttribute="bottom" secondItem="Xfx-K6-mgQ" secondAttribute="bottom" id="N3n-IE-C2S"/>
+                            <constraint firstItem="sjX-BE-kdU" firstAttribute="leading" secondItem="8ld-sW-7ep" secondAttribute="leading" constant="12" id="QbM-8u-sIc"/>
+                            <constraint firstItem="h8o-7K-iDM" firstAttribute="leading" secondItem="8ld-sW-7ep" secondAttribute="leading" constant="100" id="RYx-Ga-EjE"/>
+                            <constraint firstItem="OKd-uG-WOx" firstAttribute="centerX" secondItem="sjX-BE-kdU" secondAttribute="centerX" multiplier="1.2" id="XcW-D2-lir"/>
+                            <constraint firstItem="Xfx-K6-mgQ" firstAttribute="leading" secondItem="sQl-vK-tdl" secondAttribute="leading" id="ZOV-t5-eiz"/>
+                            <constraint firstItem="h8o-7K-iDM" firstAttribute="top" secondItem="8ld-sW-7ep" secondAttribute="top" constant="12" id="dYi-wK-63n"/>
+                            <constraint firstItem="Xfx-K6-mgQ" firstAttribute="top" secondItem="sQl-vK-tdl" secondAttribute="top" id="hU2-Ls-QLA"/>
+                            <constraint firstAttribute="trailing" secondItem="Xfx-K6-mgQ" secondAttribute="trailing" id="lf3-iC-Fs5"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="c4N-MU-FbO"/>
+                    <connections>
+                        <outlet property="field" destination="zbH-TO-1ku" id="wt3-Si-YTe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C6u-Nv-07X" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1613" y="865"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Artboard 60" width="450" height="164.5"/>
+        <image name="Artboard 61" width="654" height="162.5"/>
+        <image name="Artboard 62" width="704.5" height="394.5"/>
+        <image name="Artboard 64" width="237.5" height="237.5"/>
+        <image name="V 1" width="626" height="351"/>
+        <image name="V 2" width="626" height="417"/>
+        <image name="arrowshape.right.fill" catalog="system" width="128" height="104"/>
+        <image name="bg" width="5468" height="3661"/>
+        <image name="circle.dotted.circle.fill" catalog="system" width="128" height="123"/>
+        <image name="icon" width="1024" height="1024"/>
+        <image name="logo" width="720" height="720"/>
+        <image name="person.badge.key" catalog="system" width="128" height="128"/>
+        <image name="xmark.circle.fill" catalog="system" width="128" height="123"/>
+        <namedColor name="bg">
+            <color red="0.10100000351667404" green="0.017999999225139618" blue="0.26600000262260437" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="btn">
+            <color red="0.55699998140335083" green="0.086000002920627594" blue="0.086000002920627594" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="cell">
+            <color red="0.84700000286102295" green="0.25099998712539673" blue="0.25099998712539673" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="lbl1">
+            <color red="1" green="0.91699999570846558" blue="0.81099998950958252" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tertiaryLabelColor">
+            <color red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.29803921570000003" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
